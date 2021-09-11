@@ -13,8 +13,9 @@
 // Toggle layers with a triple tap
 // #define TAPPING_TOGGLE 3
 
-#define XXX KC_NO
+#define MIDI_BASIC
 
+<<<<<<< HEAD
 #define LAYOUT_ergodox_36(\
      K00, K01, K02, K03, K04,                K05, K06, K07, K08, K09,\
      K10, K11, K12, K13, K14,                K15, K16, K17, K18, K19,\
@@ -31,3 +32,8 @@ XXX, XXX, XXX, XXX, K32,                          K37, XXX, XXX, XXX, XXX,\
                               XXX,      XXX,\
                     K33, K34, XXX,      XXX, K35, K36\
 )
+=======
+#ifdef AUDIO_ENABLE
+    #define STARTUP_SONG SONG(PLANCK_SOUND)
+#endif
+>>>>>>> c64bb43a (Testing layout on Planck)
