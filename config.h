@@ -1,7 +1,7 @@
 #pragma once
 
 // Settings for easy combos, see: http://combos.gboards.ca/docs/install/
-#define COMBO_TERM 50
+#define COMBO_TERM 40
 #define COMBO_VARIABLE_LEN
 #define QMK_KEYS_PER_SCAN 4
 
@@ -10,6 +10,7 @@
 #define TAPPING_FORCE_HOLD
 #define IGNORE_MOD_TAP_INTERRUPT
 
+<<<<<<< HEAD
 // Toggle layers with a triple tap
 // #define TAPPING_TOGGLE 3
 
@@ -37,3 +38,8 @@ XXX, XXX, XXX, XXX, K32,                          K37, XXX, XXX, XXX, XXX,\
     #define STARTUP_SONG SONG(PLANCK_SOUND)
 #endif
 >>>>>>> c64bb43a (Testing layout on Planck)
+=======
+// Disable unneeded features
+#define NO_ACTION_MACRO
+#define NO_ACTION_FUNCTION
+>>>>>>> 2187bcf0 (Saved firmware space w/ link time optimization)
