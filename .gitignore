@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /.west
 /bootloader
 /modules
@@ -16,3 +17,12 @@ __pycache__
 
 # clangd
 app/.cache/
+=======
+.DS_Store
+build/
+zmk/
+zephyr/
+modules/
+tools/
+.west/
+>>>>>>> c7ca50a8 (Added ZMK config for Corne-ish Zen)
