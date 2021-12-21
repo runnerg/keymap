@@ -14,9 +14,9 @@ You can also come join our [ZMK Discord Server](https://zmk.dev/community/discor
 To review features, check out the [feature overview](https://zmk.dev/docs/). ZMK is under active development, and new features are listed with the [enhancement label](https://github.com/zmkfirmware/zmk/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement) in GitHub. Please feel free to add 👍 to the issue description of any requests to upvote the feature.
 =======
 # 36-key Combo Layout
-A combo-infused keymap for the OLKB Planck rev 6, implemented in QMK.
+Combo-infused keymaps for the OLKB Planck rev 6 and Corne-ish Zen 3x5, implemented in both QMK and ZMK respectively.
 
-![A picture of a split Planck keymap](./keymap.png)
+![A picture of a split keymap](./keymap.png)
 
 [Link to keyboard-layout-editor](http://www.keyboard-layout-editor.com/#/gists/39d751b9dc2e97a37b8e29fe4aa87cc5)
 
@@ -27,8 +27,6 @@ The keymap has the following features:
 * Home-row mods
 * Combos for symbols
 * Only two additional layers!
-
-Layers can be toggled on/off with 3 taps of the corresponding thumb-key.
 
 ## Inspiration
 Ideas for this keymap were drawn from the below resources:
