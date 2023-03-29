@@ -99,7 +99,7 @@
           &kp Q       &kp W       &kp F       &kp P         &kp B       &kp J   &kp L        &kp U      &kp Y       &kp SQT
           &hm LSHFT A &hm LCTRL R &hm LALT S  &hm LGUI T    &kp G       &kp M   &hm LGUI N   &hm LALT E &hm LCTRL I &hm LSHFT O
           &kp Z       &kp X       &kp C       &kp D         &kp V       &kp K   &kp H        &kp COMMA  &kp DOT     &kp FSLH
-                                  &kp ESC     &lt NAV BSPC &kp TAB     &hm LSHFT RET &lt NUM SPACE &kp DEL
+                                  &lt ESC TAB &lt NAV SPACE &kp BSPC    &hm LSHFT RET &lt NUM SPACE &kp DEL
         >;
       };
 
