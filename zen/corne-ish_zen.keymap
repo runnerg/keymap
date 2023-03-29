@@ -94,12 +94,12 @@
       compatible = "zmk,keymap";
 
       col_layer {
-        label = "COLMAK";
+        label = "COLEMAK";
         bindings = <
           &kp Q       &kp W       &kp F       &kp P         &kp B       &kp J   &kp L        &kp U      &kp Y       &kp SQT
           &hm LSHFT A &hm LCTRL R &hm LALT S  &hm LGUI T    &kp G       &kp M   &hm LGUI N   &hm LALT E &hm LCTRL I &hm LSHFT O
           &kp Z       &kp X       &kp C       &kp D         &kp V       &kp K   &kp H        &kp COMMA  &kp DOT     &kp FSLH
-                                  &kp ESC     &lt NAV TAB &kp BSPC     &lt LSHFT RET &lt NUM SPACE &kp DEL
+                                  &kp ESC     &lt NAV BSPC &kp TAB     &hm LSHFT RET &lt NUM SPACE &kp DEL
         >;
       };
 
