@@ -99,7 +99,7 @@
           &kp Q       &kp W       &kp F       &kp P         &kp B       &kp J   &kp L        &kp U      &kp Y       &kp SQT
           &hm LSHFT A &hm LCTRL R &hm LALT S  &hm LGUI T    &kp G       &kp M   &hm LGUI N   &hm LALT E &hm LCTRL I &hm LSHFT O
           &kp Z       &kp X       &kp C       &kp D         &kp V       &kp K   &kp H        &kp COMMA  &kp DOT     &kp FSLH
-                                  &lt ESC TAB &lt NAV SPACE &kp BSPC    &hm LSHFT RET &lt NUM SPACE &kp DEL
+                                  &kp TAB     &lt NAV SPACE &kp BSPC    &hm LSHFT RET &lt NUM SPACE &kp DEL
         >;
       };
 
@@ -117,8 +117,8 @@
         label = "NUMPAD";
         bindings = <
           &bt BT_SEL 0 &kp F7 &kp F8  &kp F9    &kp F10     &kp EQUAL  &kp N7 &kp N8 &kp N9 &kp PLUS
-          &bt BT_SEL 1 &kp F4 &kp F5  &kp F6    &kp F11     &kp ASTRK  &kp N4 &kp N5 &kp N6 &kp MINUS
-          &bt BT_SEL 2 &kp F1 &kp F2  &kp F3    &kp F12     &kp N0     &kp N1 &kp N2 &kp N3 &kp FSLH
+          &bt BT_SEL 1 &kp F4 &kp F5  &kp F6    &kp F11     &kp N0     &kp N4 &kp N5 &kp N6 &kp MINUS
+          &bt BT_SEL 2 &kp F1 &kp F2  &kp F3    &kp F12     &kp ASTRK  &kp N1 &kp N2 &kp N3 &kp BSLSH
                               &kp ESC &kp SPACE &kp TAB     &bt BT_CLR &none  &none
         >;
       };
