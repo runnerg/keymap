@@ -51,8 +51,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Cache west modules
+<<<<<<< HEAD
         uses: actions/cache@v2
 >>>>>>> c7ca50a8 (Added ZMK config for Corne-ish Zen)
+=======
+        uses: actions/cache@v4
+>>>>>>> ed57ef9c (Update build.yml)
         env:
           cache-name: cache-zephyr-modules
         with:
