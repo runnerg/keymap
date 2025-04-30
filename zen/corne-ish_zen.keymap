@@ -1,11 +1,12 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/pointing.h>
 
 // LAYERS
 #define COL 0
-#define NAV 1
-#define NUM 2
+#define NUM 1
+#define NAV 2
 
 // MACROS
 #define U_UNDO  LG(Z)
@@ -15,6 +16,9 @@
 #define U_REDO  LS(LG(Z))
 #define U_CLIP  LC(LG(C))
 #define U_SHOT  LS(LG(N4))
+
+// POINTING
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200
 
 // CONFIGURATION
 #define COMBO(NAME, KEYPOS) \
@@ -96,30 +100,30 @@
       col_layer {
         label = "COLEMAK";
         bindings = <
-          &kp Q       &kp W       &kp F       &kp P         &kp B       &kp J   &kp L        &kp U      &kp Y       &kp SQT
-          &hm LSHFT A &hm LCTRL R &hm LALT S  &hm LGUI T    &kp G       &kp M   &hm LGUI N   &hm LALT E &hm LCTRL I &hm LSHFT O
-          &kp Z       &kp X       &kp C       &kp D         &kp V       &kp K   &kp H        &kp COMMA  &kp DOT     &kp FSLH
-                                  &kp TAB     &lt NAV SPACE &kp BSPC    &hm LSHFT RET &lt NUM SPACE &kp DEL
-        >;
-      };
-
-      nav_layer {
-        label = "ARROWS";
-        bindings = <
-          &kp LG(N1) &kp LG(N2) &kp LG(N3) &kp LG(N4) &kp LG(N5)     &caps_word &kp HOME   &kp PG_DN    &kp PG_UP    &kp END
-          &kp LSHFT  &kp LCTRL  &kp LALT   &kp LGUI   &kp U_CLIP     &kp U_SHOT &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT
-          &kp U_UNDO &kp U_CUT  &kp U_COPY &kp U_PSTE &kp U_REDO     &kp C_PP   &kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT
-                                &none      &none      &reset         &kp RET    &kp BSPC   &kp DEL
+          &kp Q       &kp W       &kp F       &kp P         &kp B               &kp J           &kp L         &kp U      &kp Y       &kp SQT
+          &kp A       &hm LGUI R  &hm LALT S  &hm LCTRL T   &kp G               &kp M           &hm LCTRL N   &hm LALT E &hm LGUI I  &kp O
+          &kp Z       &kp X       &kp C       &kp D         &kp V               &kp K           &kp H         &kp COMMA  &kp DOT     &kp SLASH
+                                  &kp LSHFT   &lt NAV TAB   &kp BSPC            &hm LSHFT SPACE &lt NUM ENTER &kp DEL
         >;
       };
 
       num_layer {
-        label = "NUMPAD";
+        label = "NUM";
         bindings = <
-          &bt BT_SEL 0 &kp F7 &kp F8  &kp F9    &kp F10     &kp EQUAL  &kp N7 &kp N8 &kp N9 &kp PLUS
-          &bt BT_SEL 1 &kp F4 &kp F5  &kp F6    &kp F11     &kp N0     &kp N4 &kp N5 &kp N6 &kp MINUS
-          &bt BT_SEL 2 &kp F1 &kp F2  &kp F3    &kp F12     &kp ASTRK  &kp N1 &kp N2 &kp N3 &kp BSLH
-                              &kp ESC &kp SPACE &kp TAB     &bt BT_CLR &none  &none
+          &kp N1      &kp N2     &kp N3      &kp N4        &kp N5             &kp N6          &kp N7     &kp N8       &kp N9        &kp N0
+          &kp GRAVE   &kp MINUS  &kp EQUAL   &kp LBKT      &kp RBKT           &kp LEFT        &kp DOWN   &kp UP       &kp RIGHT     &kp SQT
+          &kp BSLH    &kp U_CUT  &kp U_COPY  &kp U_PSTE    &kp U_REDO         &kp C_PP        &kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT
+                                 &kp LSHFT   &lt NAV TAB &kp BSPC           &hm LSHFT SPACE &none      &kp DEL
+        >;
+      };
+
+      nav_layer {
+        label = "NAV";
+        bindings = <
+          &kp EXCL   &kp AT     &kp HASH    &kp DLLR      &kp PRCNT           &kp CARET       &kp AMPS       &kp ASTRK     &kp LPAR     &kp RPAR
+          &kp TILDE  &kp UNDER  &kp PLUS    &kp LCLK      &kp RCLK            &kp LEFT        &kp DOWN       &kp UP        &kp RIGHT    &kp DQT
+          &kp FSLH   &kp LBKT   &kp RBKT    &kp MOVE_UP   &kp MOVE_DOWN       &kp HOME        &kp PG_DN      &kp PG_UP     &kp END      &kp SLASH
+                                &kp LSHFT   &none         &kp BSPC            &hm LSHFT SPACE &lt NUM ENTER  &kp DEL
         >;
       };
     };
