@@ -17,9 +17,6 @@
 #define U_CLIP  LC(LG(C))
 #define U_SHOT  LS(LG(N4))
 
-// POINTING
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200
-
 // CONFIGURATION
 #define COMBO(NAME, KEYPOS) \
   combo_##NAME { \
