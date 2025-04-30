@@ -1,8 +1,6 @@
 #include <behaviors.dtsi>
-#include <behaviors/mouse_keys.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/pointing.h>
 
 // LAYERS
 #define COL 0
@@ -16,7 +14,7 @@
 #define U_PSTE  LG(V)
 #define U_REDO  LS(LG(Z))
 #define U_CLIP  LC(LG(C))
-#define U_SHOT  LS(LG(N4))
+#define U_SHOT  LCTRL(LA(DEL))
 
 // CONFIGURATION
 #define COMBO(NAME, KEYPOS) \
@@ -119,8 +117,8 @@
         label = "NAV";
         bindings = <
           &kp EXCL   &kp AT     &kp HASH    &kp DLLR      &kp PRCNT           &kp CARET       &kp AMPS       &kp ASTRK     &kp LPAR     &kp RPAR
-          &kp TILDE  &kp UNDER  &kp PLUS    &kp LCLK      &kp RCLK            &kp LEFT        &kp DOWN       &kp UP        &kp RIGHT    &kp DQT
-          &kp FSLH   &kp LBKT   &kp RBKT    &kp MOVE_UP   &kp MOVE_DOWN       &kp HOME        &kp PG_DN      &kp PG_UP     &kp END      &kp SLASH
+          &kp TILDE  &kp UNDER  &kp PLUS    &kp LGUI      &kp LCTR            &kp LEFT        &kp DOWN       &kp UP        &kp RIGHT    &kp DQT
+          &kp FSLH   &kp LBKT   &kp RBKT    &kp LALT      &kp U_SHOT       &kp HOME        &kp PG_DN      &kp PG_UP     &kp END      &kp SLASH
                                 &kp LSHFT   &none         &kp BSPC            &hm LSHFT SPACE &lt NUM ENTER  &kp DEL
         >;
       };
